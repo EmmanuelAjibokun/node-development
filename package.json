@@ -1,0 +1,27 @@
+{
+  "name": "development",
+  "version": "1.0.0",
+  "description": "learn node development",
+  "main": "server.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EmmanuelAjibokun/node-development.git"
+  },
+  "author": "manny",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EmmanuelAjibokun/node-development/issues"
+  },
+  "homepage": "https://github.com/EmmanuelAjibokun/node-development#readme",
+  "dependencies": {
+    "date-fns": "^4.1.0",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
