@@ -1,0 +1,15 @@
+20250624	16:37:47	04be40c0-eaa6-4006-9c7b-512aea8d10b0	/data/data.json	GET
+20250624	16:40:19	f56703ab-a9c6-48fb-ad95-e223f09f97ca	/data/data.json	GET
+20250624	16:41:15	a05bc5e7-526c-4e50-ad97-fbcb8ca62c2b	/data/data.json	GET
+20250624	16:48:46	586e38b0-a630-4848-8e75-9425d90b9d00	/data/data.json	GET
+20250624	16:51:00	d44a29f1-b8bd-4ebb-83e7-b6717aeb1897	/data/data.json	GET
+20250624	16:51:00	287db4e5-356c-44be-94ed-3749ff458969	/favicon.ico	GET
+20250624	16:52:24	19bce8fb-de1b-4a81-a973-ebe9bbf3359b	/old-page.html	GET
+20250624	16:52:24	ce6a3a86-bde7-4d1e-9b95-0c11258ccf7b	/new-page.html	GET
+20250624	16:52:24	46fa5342-a36f-4740-93a0-bd4d3eec945e	/css/style.css	GET
+20250624	16:52:24	58ebb122-4aff-451e-bd54-d533dee88ad0	/img/img1.jpg	GET
+20250624	16:52:44	db457b7c-beed-4cec-b425-ddcff1832fd9	/	GET
+20250624	16:52:45	b7ccaca5-fc2d-4ebd-ab16-fef916edc505	/css/style.css	GET
+20250624	16:56:18	25976c80-8918-443f-a80b-845f6ae0dac8	/	GET
+20250624	16:58:23	19a3f613-6f65-461e-8250-53af20d1ad84	/sign-in	GET
+20250624	16:58:23	64479bc4-e976-4c47-a06e-e539e1684e14	/css/style.css	GET
