@@ -74,3 +74,12 @@
 20250627	05:50:55	668c70cc-9fca-4a5d-962e-f29ad9e989b2	POST	undefined	/employees
 20250627	05:53:17	017b7e6f-19ab-4ab9-931c-5a7213c12000	POST	undefined	/employees
 20250627	05:54:28	c64df00d-e8ba-4c0c-ab5c-feb7eec68267	POST	undefined	/employees
+20250627	07:56:33	613e322c-f58d-4a4e-8d5c-3598f3d76c18	POST	undefined	/employees
+20250627	07:58:08	024f2556-47d5-4c0a-8669-a43ed014207e	DELETE	undefined	/employees
+20250627	07:58:35	69fb9ae7-373c-4f8d-92bc-4cf3ec5724b4	DELETE	undefined	/employees
+20250627	08:00:00	7fca7d83-9a78-4454-a791-9a878a137e50	POST	undefined	/employees/2
+20250627	08:00:21	3b0ddfe2-3bf5-46ab-8c86-906fbb16639a	POST	undefined	/employees
+20250627	08:01:43	3daeec00-41e9-461c-b082-50b95a10ecd7	PUT	undefined	/employees
+20250627	08:02:25	3c18822e-6e52-4a54-8c37-c4e525096ae9	PUT	undefined	/employees
+20250627	08:08:45	0c7ace96-1f25-4035-b0aa-e95f55ae81a8	POST	undefined	/employees
+20250627	08:11:29	9b5fbc18-f329-4916-8cf9-f66178b4ed84	GET	undefined	/employees/2

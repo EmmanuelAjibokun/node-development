@@ -5,40 +5,20 @@ const PORT = process.env.PORT || 3500;
 const { logger } = require('./middleware/logEvents');
 const errorHandler = require('./middleware/errorHandler');
 const cors = require('cors');
+const corsOptions = require('./config/corsOptions')
 
 //  custom middleware logger
 app.use(logger);
 
 // Cross Origin Resource Sharing
-const whitelist = ['https://www.mysite.com', 'http://127.0.0.1:5500', 'http://localhost:3500'];
-const corsOptions = {
-    origin: (origin, callback) => {
-        if (whitelist.indexOf(origin) !== -1 || !origin) {
-            callback(null, true)
-        } else {
-            callback(new Error("Not allowed by CORS"));
-        }
-    },
-    OptionsSuccessStatus: 200
-}
 app.use(cors(corsOptions));
 
-// buildt-in middleware to handle urlencoded data
-// in other words, form data:
+// buildt-in middleware to handle urlencoded form data
 // 'content-type: application/x-www-form-urlencoded'
 app.use(express.urlencoded({extended: false}));
 
 // built-in middleware for json
 app.use(express.json());
-
-// Set Content Security Policy header
-// app.use((req, res, next) => {
-//   res.setHeader(
-//     "Content-Security-Policy",
-//     "connect-src 'self' http://localhost:3500"
-//   );
-//   next();
-// });
 
 // serve static files
 app.use(express.static(path.join(__dirname, '/public')));
@@ -65,4 +45,3 @@ app.use(errorHandler)
 
 // listening for request, should always be at the end of server.js
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
-
