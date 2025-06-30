@@ -1,16 +1,18 @@
-const usersDB = {
-    users: require('../model/users.json'),
-    setUsers: function (data) { this.users = data }
-}
+// const usersDB = {
+//     users: require('../model/users.json'),
+//     setUsers: function (data) { this.users = data }
+// }
+// const foundUser = usersDB.users.find(person => person.refreshToken === refreshToken);
 
+const User = require('../model/User');
 const jwt = require('jsonwebtoken');
 
-const handleRefreshToken = (req, res) => {
+const handleRefreshToken = async (req, res) => {
     const cookies = req.cookies;
+    console.log("refreshToken", cookies)
     if (!cookies ?.jwt) return res.sendStatus(401);
     const refreshToken = cookies.jwt
-
-    const foundUser = usersDB.users.find(person => person.refreshToken === refreshToken);
+    const foundUser = await User.findOne({ refreshToken }).exec();
     if (!foundUser) return res.status(403).json({ 'message': 'refresh token not found'}); // Forbidden: token not found
 
     // evaluate jwt
@@ -18,7 +20,7 @@ const handleRefreshToken = (req, res) => {
         refreshToken,
         process.env.REFRESH_TOKEN_SECRET,
         (err, decoded) => {
-            if (err || foundUser.username !== decoded.username) return res.sendStatus(403); // mismatch between signed refreshToken user and user's refreshToken gotten from db
+            if (err || foundUser.username !== decoded.username) return res.sendStatus(403); // mismatch between user's signed refreshToken and user's refreshToken gotten from db
             const roles = Object.values(foundUser.roles);
             const accessToken = jwt.sign(
                 {
