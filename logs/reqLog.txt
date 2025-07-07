@@ -241,3 +241,5 @@
 20250630	03:54:54	bdacdd07-1e80-45d5-acaa-4cfc27e6d6a5	PUT	undefined	/employees
 20250630	04:03:56	c43c0dab-2a7f-4be3-b451-2476c77af662	POST	undefined	/auth
 20250630	04:04:20	c3f02d29-65fc-4277-a2eb-c38db2cf1f10	PUT	undefined	/employees
+20250707	02:03:20	0afd798e-8518-452e-b78b-87cdbaa7da73	GET	undefined	/subdir
+20250707	02:03:20	9362c840-9c90-4714-b109-f195b2b6d827	GET	undefined	/subdir/
